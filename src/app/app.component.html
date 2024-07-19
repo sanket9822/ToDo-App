@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <span>Todo Application</span>
+  <span class="spacer"></span>
+  <button mat-button (click)="openTaskDialog()">Add Task</button>
+</mat-toolbar>
+
+<div class="board">
+  <div class="column" cdkDropList [cdkDropListData]="todo" (cdkDropListDropped)="drop($event)">
+    <h2>Todo</h2>
+    <div *ngFor="let task of todo" class="task" cdkDrag>
+      <h3>{{ task.title }}</h3>
+      <p>{{ task.description }}</p>
+      <img *ngIf="task.image" [src]="task.image" alt="Task Image" width="100%">
+      <p *ngIf="task.priority">Priority: {{ task.priority }}</p>
+    </div>
+  </div>
+
+  <div class="column" cdkDropList [cdkDropListData]="inProgress" (cdkDropListDropped)="drop($event)">
+    <h2>In Progress</h2>
+    <div *ngFor="let task of inProgress" class="task" cdkDrag>
+      <h3>{{ task.title }}</h3>
+      <p>{{ task.description }}</p>
+      <img *ngIf="task.image" [src]="task.image" alt="Task Image" width="100%">
+      <p *ngIf="task.priority">Priority: {{ task.priority }}</p>
+    </div>
+  </div>
+
+  <div class="column" cdkDropList [cdkDropListData]="done" (cdkDropListDropped)="drop($event)">
+    <h2>Done</h2>
+    <div *ngFor="let task of done" class="task" cdkDrag>
+      <h3>{{ task.title }}</h3>
+      <p>{{ task.description }}</p>
+      <img *ngIf="task.image" [src]="task.image" alt="Task Image" width="100%">
+      <p *ngIf="task.priority">Priority: {{ task.priority }}</p>
+    </div>
+  </div>
+</div>
