@@ -1,27 +1,25 @@
-# TodoApp
+# ToDo Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+This is a ToDo application built with Angular that allows users to add, view, and manage tasks in different columns (Todo, In Progress, Done). Tasks can be dragged and dropped between columns.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Add new tasks with title, description, image, and priority.
+- Display tasks in three columns: Todo, In Progress, and Done.
+- Drag-and-drop functionality to move tasks between columns.
+- Image upload with drag-and-drop functionality in the form.
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js and npm installed
+- Angular CLI installed
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Follow these instructions to set up and run the application on your local machine.
 
-## Running unit tests
+### 1. Clone the Repository
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/sanket9822/Sanket-Todo-app.git
+cd Sanket-Todo-app
